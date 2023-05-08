@@ -13,7 +13,7 @@ const geradorEtiquetas = (info:{
     ): string[] => {
 
     const resultado:string[] = [];
-
+    
     for (let i = 1; i<= info.qtd; i++){
         resultado.push(`${info.lote}-${info.ano}-${i.toString().padStart(3,'0')}`)
     }
